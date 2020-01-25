@@ -1,5 +1,6 @@
 import api from "./api/index";
 export default async () => ({
+  server: { port: 8080 },
   mode: "universal",
   /*
    ** Headers of the page
