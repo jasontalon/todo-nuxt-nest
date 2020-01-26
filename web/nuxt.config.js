@@ -1,6 +1,8 @@
 import api from "./api/index";
 export default async () => ({
-  server: { port: 8080 },
+  env: {
+    baseUrl: process.env.BASE_URL || "http://localhost:3000"
+  },
   mode: "universal",
   /*
    ** Headers of the page
