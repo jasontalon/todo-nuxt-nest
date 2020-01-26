@@ -7,9 +7,8 @@ RUN cd api && \
     npm install && \
     npm run build && \
     cd ../web && \
-    npm install && \
-    npm run build
+    npm install
 
-EXPOSE 8080
+EXPOSE 3000
 
-CMD [ "npm", "run", "--prefix", "web", "start" ]
+CMD [ "npm", "run", "--prefix", "web", "buildstart" ]
