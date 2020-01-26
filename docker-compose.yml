@@ -8,3 +8,4 @@ services:
       - BASE_URL=http://${HOST_IP}:${HOST_PORT}/
       - NUXT_HOST=0.0.0.0
       - NUXT_PORT=${CONTAINER_PORT}
+      - NODE_ENV=production
