@@ -43,7 +43,12 @@ export default async () => ({
     // Doc: https://bootstrap-vue.js.org
     "bootstrap-vue/nuxt",
     // Doc: https://axios.nuxtjs.org/usage
-    "@nuxtjs/axios",
+    [
+      "@nuxtjs/axios",
+      {
+        baseURL: process.env.BASE_URL || "http://localhost:3000"
+      }
+    ],
     // Doc: https://github.com/nuxt-community/dotenv-module
     "@nuxtjs/dotenv"
   ],
